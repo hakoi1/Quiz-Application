@@ -1,0 +1,132 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:padding="5dp"
+    tools:context="hktechware.com.testyourbestv101.MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackground"
+        >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorPrimary"
+            android:id="@+id/titleLayout"
+            >
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textAlignment="center"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorPrimary"
+                android:text="Test Your Best"
+                android:fontFamily="casual"
+                android:textColor="@android:color/white"
+                android:textSize="35sp" />
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:id="@+id/description"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:layout_centerHorizontal="true"
+                android:background="@color/colorPrimary"
+                android:textSize="20sp"
+
+                android:layout_below="@+id/title"
+                android:text="Helpful for Bise Punjab Students..."/>
+        </RelativeLayout>
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:textAlignment="center"
+        android:id="@+id/choose"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@+id/category_text"
+        android:text="Choose suitable selections from below"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/category_text"
+    android:layout_marginTop="10px"
+    android:text="Select Class:"
+    android:textColor="@android:color/black"
+    android:layout_centerHorizontal="true"
+    android:textSize="20sp"
+    android:textAlignment="center"
+    android:textStyle="italic"
+    android:layout_marginBottom="5dp"
+    android:layout_above="@+id/spinner"
+    />
+
+<Spinner
+    android:id="@+id/spinner"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:textAlignment="center"
+    android:layout_above="@+id/category_subject"
+    android:layout_marginBottom="20dp"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/category_subject"
+    android:textSize="20sp"
+    android:text="Select Subject:"
+    android:textAlignment="center"
+    android:layout_centerHorizontal="true"
+    android:textColor="@android:color/black"
+    android:layout_centerInParent="true"
+    android:layout_marginBottom="20dp"/>
+<Spinner
+    android:id="@+id/spinner_subject"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:layout_below="@+id/category_subject"
+    android:layout_marginBottom="20dp"
+    />
+
+<Button
+    android:id="@+id/proceed_select_quiz"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Proceed"
+    android:height="55dp"
+    android:width="150dp"
+    android:background="@color/colorPrimary"
+    android:textSize="20sp"
+    android:layout_centerHorizontal="true"
+    android:textColor="@android:color/white"
+    android:layout_below="@+id/spinner_subject"
+    />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="&#169;HK Techware"
+            android:textSize="25sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:background="@color/colorPrimary"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout></RelativeLayout>
